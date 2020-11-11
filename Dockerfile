@@ -4,3 +4,5 @@ RUN apt-get install -yqq libxml2-dev
 RUN docker-php-ext-install mysqli xml
 RUN pecl install xdebug
 RUN docker-php-ext-enable xdebug
+RUN pecl install redis
+RUN docker-php-ext-enable redis
